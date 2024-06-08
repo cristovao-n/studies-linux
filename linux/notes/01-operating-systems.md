@@ -31,7 +31,7 @@ We call these operating systems Unix-like. They fully or mostly meet the specifi
 
 The Free Software movement came about in the 1980s as a response to the proliferation of proprietary and restricted software.
 
-According to the movement’s leader, Richard Stallman, _“Users should have the freedom to run, copy, distribute, stody, change and improve the software”_
+According to the movement’s leader, Richard Stallman, _“Users should have the freedom to run, copy, distribute, study, change and improve the software”_
 
 ### GNU
 
