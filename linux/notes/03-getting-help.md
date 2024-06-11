@@ -57,29 +57,3 @@ Find the exact location of an executable:
 `which COMMAND`
 
 This only works for executables, not built-in shell commands or aliases
-
-## less
-
-The man pages and git log command are opened by default with a tool called `less`
-
-Usage:  
-`less INPUT`
-
-Get help  
-`h`
-
-Go to next page  
-`f`
-
-Go to previous page  
-`b`
-
-Search next occurrence  
-`/pattern`
-
-Search previous occurrence  
-`?pattern`
-
-Other options:  
-`help cd`  
-`info cd`

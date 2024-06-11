@@ -23,13 +23,13 @@ Remove with prompt before every removal
 ## mv
 
 Move files to a target directory  
-`mv FILE1 FILE2 FILE3 FILE4 DIRECTORY`
+`mv FILE... DIRECTORY`
 
 Move directories to a target directory  
-`mv DIRECTORY1 DIRECTORY2 TARGET_DIRECTORY`
+`mv DIRECTORY1... TARGET_DIRECTORY`
 
 Move files and directories to a target directory  
-`mv FILE1 FILE2 DIRECTORY1 DIRECTORY2 TARGET_DIRECTORY`
+`mv FILE... DIRECTORY... TARGET_DIRECTORY`
 
 ### Renaming with mv
 
@@ -43,4 +43,11 @@ It only works as a renaming tool if we process one file at a time
 
 ## cp
 
+Copy file to target directory  
+`cp FILE... TARGET_DIRECTORY`
 
+Copy entire directory and give it a new name (target folder should not exist)  
+`cp -r FOLDER_OLD_NAME FOLDER_NEW_NAME`
+
+Copy entire directory (target folder should exist)  
+`cp -r FOLDER TARGET_DIRECTORY`
