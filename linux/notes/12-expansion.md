@@ -85,7 +85,7 @@ Print weekdays planners in stdout
 
 `echo jan{1..31}` --> `jan1 jan2 jan3 ... jan31`  
 `echo {2..10..2}` --> `2 4 6 8 10`  
-`echo group-{a..e}` --> `group-a group-b group-c group-d group-e`  
+`echo group-{a..e}` --> `group-a group-b group-c group-d group-e`
 
 Create directories  
 `mkdir -p {mon,tue,wed,thu,fri,sat,sun}/{breakfast,lunch,dinner}`
@@ -96,10 +96,30 @@ Create directories
 
 ## Arithmetic expansion
 
-The shell will perform arithmetic via expansion using the `$((EXPRESSION)) syntax  
+The shell will perform arithmetic via expansion using the `$((EXPRESSION))` syntax
 
 `echo $((10+3))`  
 `echo $((10%3))`
 
 ## Quoting
 
+`echo look at          me` --> `look at me`  
+`echo holy $hit` --> `holy`
+
+### Double quotes
+
+If we wrap text in double quotes, the shell will respect our spacing and will ignore special characters except for: **$ \ `**  
+Pathname expansion, brace expansion and word splitting will be ignored
+
+### Single quotes
+
+Use single quotes to suppress all forms of substitution  
+`echo "$((2+2)) is 4"` --> `4 is 4`  
+`echo '$((2+2)) is 4'` --> `$((2+2)) is 4`
+
+## Command substitution
+
+We can use the `$(COMMAND)` syntax to display the output of another command
+
+`echo "today is $(date)`  
+`echo Hello there $(whoami)`
