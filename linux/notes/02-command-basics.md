@@ -45,3 +45,14 @@ Example:
 `ncal -A 1` or `ncal -A1`  
 `ncal -B 2` or `ncal -B2`  
 `ncal -A1 -B1 may 2003`
+
+### Backslash
+
+In shell commands, the backslash (\) is used as a line continuation character. It allows you to break a long command into multiple lines for better readability. When the shell encounters a backslash at the end of a line, it treats the next line as a continuation of the current line.
+
+```bash
+sudo docker run -e 'ACCEPT_EULA=Y' -e 'MSSQL_SA_PASSWORD=<YourStrong!Passw0rd>' \
+   --name 'sql1' -p 1401:1433 \
+   -v sql1data:/var/opt/mssql \
+   mcr.microsoft.com/mssql/server:2019-latest
+```
