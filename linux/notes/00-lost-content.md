@@ -40,3 +40,6 @@ Replace a multi-line text
 
 Show local ports in use  
 `netstat -anp`
+
+Open default file manager through terminal in current folder  
+`xdg-open .`
