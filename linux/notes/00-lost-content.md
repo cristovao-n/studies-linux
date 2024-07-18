@@ -43,3 +43,9 @@ Show local ports in use
 
 Open default file manager through terminal in current folder  
 `xdg-open .`
+
+
+Shows the time a process took to execute  
+`time sleep 3`
+
+![Time](../images/time.png)
