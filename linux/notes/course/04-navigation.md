@@ -5,7 +5,7 @@
 It's the entry point of the OS file system
 `/` --> Root directory
 
-![Root directory](../images/root-directory.png)
+![Root directory](../../images/root-directory.png)
 
 ### Home Directory
 

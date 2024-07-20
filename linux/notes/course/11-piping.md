@@ -14,7 +14,7 @@
 
 ## Introduction to Piping
 
-![Pipes](../images/pipes.png)
+![Pipes](../../images/pipes.png)
 
 Redirect the standard output of `COMMAND1` to the standard input of `COMMAND2`  
 `COMMAND1 | COMMAND2`

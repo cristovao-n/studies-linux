@@ -38,6 +38,6 @@ These characters tell us the type of the file, the read, write and execute permi
 
 ### File permissions
 
-![permissions](../images/permissions.png)
+![permissions](../../images/permissions.png)
 
-![permissions](../images/permissions2.png)
+![permissions](../../images/permissions2.png)
