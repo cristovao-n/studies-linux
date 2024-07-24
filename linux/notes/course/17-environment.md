@@ -46,6 +46,8 @@ To define an environment variable, use `export key=value`
 
 `export animal=lion`
 
+Environment variables are inherited by child processes, while regular variables are not.
+
 ## Startup files
 
 For non-login sessions (typical session when you launch the terminal)
