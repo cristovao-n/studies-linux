@@ -43,3 +43,8 @@ A common use case is to use `grep` to whittle down or filter a large chunk of da
 
 Get all processes running in the machine and filter to only the processes that include "discord"  
 `ps -aux | grep discord`
+
+## Finding file paths by content
+
+Show the file name, not the result itself  
+`grep -l "pattern" file`

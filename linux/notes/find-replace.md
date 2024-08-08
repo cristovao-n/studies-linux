@@ -51,3 +51,14 @@ Replace a multi-line text
 > More about **tr** and **sed**:
 >
 > [How can I replace each newline (\n) with a space using sed?](https://stackoverflow.com/questions/1251999/how-can-i-replace-each-newline-n-with-a-space-using-sed)
+
+
+# Real-World Examples
+
+
+Replace line with <div/> and the provided classnames by `oi`, The replace will happen in the files found by content using grep with `l` flag, which prints the file itself instead of its content  
+This solution is incomplete, the goal is to replace the entire <div/> element by a new component, but `sed` only works line by line, so we would have to remove all line breaks from the files before applying the replace
+
+```bash
+sed "s|<div className='flex w-full flex-col items-center rounded-xl bg-zinc-50 px-4 py-6 dark:bg-zinc-800 md:items-start'>|oi|g" $(echo $(grep -Rl "<div className='flex w-full flex-col items-center rounded-xl bg-zinc-50 px-4 py-6 dark:bg-zinc-800 md:items-start'>" .))
+```

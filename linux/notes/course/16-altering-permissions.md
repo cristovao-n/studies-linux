@@ -91,3 +91,6 @@ Change the file group owner
 
 Change both file owner and group owner  
 `chown bojack:horses file.txt`
+
+
+usermod... ?
