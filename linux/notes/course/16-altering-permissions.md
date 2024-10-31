@@ -79,6 +79,13 @@ See the allowed commands for the current user
 
 By default, the password is cached on a per-terminal basis for 15 minutes
 
+### Editing sudo PATH
+
+The PATH environment variable for the root user differs from the PATH for regular users.
+
+Edit root PATH  
+`sudo visudo`
+
 ## chown
 
 The `chown` command is used to change the owner and/or the group owner of a specific file or directory
@@ -91,6 +98,5 @@ Change the file group owner
 
 Change both file owner and group owner  
 `chown bojack:horses file.txt`
-
 
 usermod... ?
